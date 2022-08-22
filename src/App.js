@@ -12,6 +12,10 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
+    document.title = "Movie Corn";
+  });
+
+  useEffect(() => {
     searchMovies("Batman");
   }, []);
 
